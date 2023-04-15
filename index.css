@@ -1,47 +1,17 @@
 /************************** css Reset start****************************  */
-/*
-  1. Use a more-intuitive box-sizing model.
-*/
 *, *::before, *::after {
     box-sizing: border-box;
   }
-  /*
-    2. Remove default margin
-  */
+
   * {
     margin: 0;
   }
-  /*
-    3. Allow percentage-based heights in the application
-  */
   html, body {
     height: 100%;
   }
-  /*
-    Typographic tweaks!
-    4. Add accessible line-height
-    5. Improve text rendering
-  */
-  body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-  }
-  /*
-    6. Improve media defaults
-  */
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  /*
-    7. Remove built-in form typography styles
-  */
   input, button, textarea, select {
     font: inherit;
   }
-  /*
-    8. Avoid text overflows
-  */
   p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
   }
@@ -49,15 +19,133 @@
   /************************** css Reset end****************************  */
 
   /************************** Global styles start****************************  */
+  *{
+    font-family: 'Hanken Grotesk', sans-serif;
+  }
+  
 
-  /************************** css Reset end****************************  */
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-  /************************** Results styles start****************************  */
+  h1{
+    font-size: 24px;
+  }
 
-  /************************** Results styles end****************************  */
+  p{
+    font-size: 13px;
+  }
 
-  /************************** Summary styles start****************************  */
+  #card{
+    display: grid;
+    grid-template-columns: 50% 50%;
 
-  /************************** Summary styles end****************************  */
+    aspect-ratio: 3/2;
+    
+    box-shadow: 5px 5px 20px hsl(224, 30%, 27%) ;
+    border-radius: 20px;
+
+    height: 25rem;
+  }
+
+  #results{
+    display: grid;
+    /* row-gap: 50px; */
+    padding: 20px;
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    border-radius: 20px;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+  }
+
+  #circle{
+    display: grid;
+    place-content: center;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    border-radius: 50%;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    aspect-ratio: 1/1;
+  }
+  #circle p{
+    font-size: 12px;
+  }
+
+  
+  #score{
+    font-size: 60px;
+  }
+
+
+
+  #summary-section{
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+    display: grid;
+    padding: 20px;
+
+  }
+
+  li{
+    width: 90%;
+    list-style-type: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    list-style-position: outside;
+  }
+
+  li:nth-child(1){
+    color: hsl(0, 100%, 67%);
+    background-color: hsl(0, 100%, 67%,0.1);
+  }
+
+  li:nth-child(2){
+    color: hsl(39, 100%, 56%);
+    background-color:  hsl(39, 100%, 56%,0.1);
+  }
+  li:nth-child(3){
+    color: hsl(166, 100%, 37%);
+    background-color: hsl(166, 100%, 37%,0.1);
+  }
+  li:nth-child(4){
+    color:  hsl(234, 85%, 45%);
+    background-color: hsl(234, 85%, 45%,0.1);
+  }
+
+
+  #continue-btn{
+    background-color:  hsl(224, 30%, 27%);
+    border-radius: 20px;
+    color:hsl(0, 0%, 100%);
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    
+  }
+
+  .attribution { 
+    font-size: 11px;
+    text-align: center;
+    position: fixed;
+    right: 10px;
+    bottom:10px;
+   }
+  .attribution a {
+   color: hsl(228, 45%, 44%); 
+  }
+
+  
+
+  
+
+
+  
 
   
