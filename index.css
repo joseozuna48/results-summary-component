@@ -23,13 +23,6 @@
     font-family: 'Hanken Grotesk', sans-serif;
   }
   
-
-  body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   h1{
     font-size: 24px;
   }
@@ -38,17 +31,15 @@
     font-size: 13px;
   }
 
-  #card{
-    display: grid;
-    grid-template-columns: 50% 50%;
+  
 
-    aspect-ratio: 3/2;
-    
-    box-shadow: 5px 5px 20px hsl(224, 30%, 27%) ;
-    border-radius: 20px;
+  #card{
+    display: flex;
+    flex-direction: column;
 
     height: 25rem;
   }
+  
 
   #results{
     display: grid;
@@ -58,13 +49,16 @@
     border-radius: 20px;
     color: hsl(0, 0%, 100%);
     text-align: center;
+
+    min-height: 50vh;
+    min-width: 50vh;
   }
 
   #circle{
     display: grid;
     place-content: center;
     margin: auto;
-    width: 50%;
+    width: 30vh;
     padding: 10px;
     border-radius: 50%;
     background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
@@ -129,6 +123,9 @@
     padding: 10px;
     
   }
+  #continue-btn:hover{
+    cursor: pointer;
+  }
 
   .attribution { 
     font-size: 11px;
@@ -139,6 +136,25 @@
    }
   .attribution a {
    color: hsl(228, 45%, 44%); 
+  }
+
+
+  @media only screen and (min-width: 600px) {
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+  #card{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    box-shadow: 5px 5px 20px hsl(224, 30%, 27%) ;
+    border-radius: 20px;
+
+    height: 25rem;
+  }
+
   }
 
   
