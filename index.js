@@ -8,9 +8,10 @@ window.onload = function(){
     fetch("./data.json")
     .then( (response)=>response.json() )
     .then((json) => {
-
+        
         json.forEach(element => {
-            ul.insertAdjacentHTML("beforeend",`<li><i style=""></i>${element['category']} ${element['score']}/100 </li>`)
+            ul.insertAdjacentHTML("beforeend",`
+            <li class="summary_li"> <img src="${element['icon']}"> <p> ${element['category']} ${element['score']}/100 </p>  </li>`)
         });
     } );
     
