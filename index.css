@@ -31,7 +31,6 @@
     font-size: 13px;
   }
 
-  
 
   #card{
     display: flex;
@@ -43,15 +42,14 @@
 
   #results{
     display: grid;
-    /* row-gap: 50px; */
+    
     padding: 20px;
     background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
-    border-radius: 20px;
+    border-radius: 0 0 20px 20px;
     color: hsl(0, 0%, 100%);
     text-align: center;
 
     min-height: 50vh;
-    min-width: 50vh;
   }
 
   #circle{
@@ -60,7 +58,7 @@
     margin: auto;
     width: 30vh;
     padding: 10px;
-    border-radius: 50%;
+    border-radius:50%;
     background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
     aspect-ratio: 1/1;
   }
@@ -125,6 +123,7 @@
   }
   #continue-btn:hover{
     cursor: pointer;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
   }
 
   .attribution { 
@@ -153,6 +152,10 @@
     border-radius: 20px;
 
     height: 25rem;
+  }
+
+  #results{
+    border-radius: 20px;
   }
 
   }
