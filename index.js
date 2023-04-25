@@ -11,7 +11,7 @@ window.onload = function(){
         
         json.forEach(element => {
             ul.insertAdjacentHTML("beforeend",`
-            <li class="summary_li"> <img src="${element['icon']}"> <p> ${element['category']} ${element['score']}/100 </p>  </li>`)
+            <li class="summary_li"> <div><img src="${element['icon']}"> ${element['category']}</div> <div><b>${element['score']}</b>/100</div>  </li>`)
         });
     } );
     

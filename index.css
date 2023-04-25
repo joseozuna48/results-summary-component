@@ -30,20 +30,16 @@
   p{
     font-size: 13px;
   }
-
-
-  #card{
-    display: flex;
-    flex-direction: column;
-
-    height: 25rem;
-  }
   
+  #card{
+    display: grid;
+    border-radius: 0 0 2rem 2rem;
+  }
 
   #results{
-    display: grid;
     
-    padding: 20px;
+
+    padding: 2rem;
     background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
     border-radius: 0 0 20px 20px;
     color: hsl(0, 0%, 100%);
@@ -51,12 +47,19 @@
 
     min-height: 50vh;
   }
+  
+  .grid-flow{
+    display: grid;
+    gap: 1rem;
+    align-content: start;
+  }
 
   #circle{
     display: grid;
     place-content: center;
     margin: auto;
-    width: 30vh;
+
+    width: 12rem;
     padding: 10px;
     border-radius:50%;
     background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
@@ -67,25 +70,26 @@
   }
 
   #score{
-    font-size: 60px;
+    font-size: 3em;
   }
-
-
 
   #summary-section{
+    padding:2rem;
     border-radius: 10px;
     background-color: hsl(0, 0%, 100%);
-    display: grid;
-    /* padding: 20px; */
 
   }
 
+  ul{
+    padding:0;
+  }
   li{
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    align-items: center;
+    width: 100%;
     list-style-type: none;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
     padding: 10px;
     border-radius: 10px;
     list-style-position: outside;
@@ -112,18 +116,20 @@
 
   #continue-btn{
     background-color:  hsl(224, 30%, 27%);
-    border-radius: 20px;
+    border-radius: 100vw;
     color:hsl(0, 0%, 100%);
     text-decoration: none;
     text-align: center;
     border: none;
-    width: 80%;
     margin: auto;
-    padding: 10px;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
     
   }
   #continue-btn:hover{
-    cursor: pointer;
+    
     background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
   }
 
@@ -147,12 +153,11 @@
     }
 
   #card{
-    display: grid;
-    grid-template-columns: 50% 50%;
+    margin-inline: 1rem;
+    grid-template-columns: 1fr 1fr;
     box-shadow: 5px 5px 20px hsl(224, 30%, 27%) ;
-    border-radius: 20px;
-
-    height: 25rem;
+    max-width: 36rem; 
+    border-radius: 2rem;
   }
 
   #results{
